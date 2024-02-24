@@ -1,0 +1,464 @@
+html{
+  scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.navbar {
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 900;
+}
+.navbar .logo a {
+  color: white;
+  font-size: 34px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar .logo span {
+  color: red;
+}
+.navbar.sticky {
+  padding: 15px 0;
+  background-color: brown;
+  margin-top: -8px;
+  width: 99%;
+}
+.navbar .menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: red;
+}
+.menu-btn {
+  color: aliceblue;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.home {
+  display: flex;
+  background: url("../img/How-to-.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  background-size: 100%;
+}
+.home .max-width {
+  margin: auto 0 auto 15px;
+}
+.home .home-content a {
+  display: inline-block;
+  background-color: crimson;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover {
+  background: none;
+  color: crimson;
+}
+.h .home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span {
+  color: rgb(0, 255, 55);
+  font-weight: 500;
+}
+@media (max-width: 1114px) {
+  .max-width {
+    margin-left: -0px;
+  }
+}
+@media (max-width: 947px) {
+}
+@media (max-width: 947px) {
+  .max-width {
+    padding: 0 50px;
+  }
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .navbar .menu.active {
+    left: 0;
+    background: black;
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    margin-top: -2px;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 30px;
+  }
+  .skills .max-width .skills-content .column .text {
+    width: 350px;
+  }
+  .skills .max-width .skills-content .column p {
+    width: 300px;
+  }
+  .skills .max-width .skills-content .column .bars .info {
+    margin-top: 60px;
+    margin-left: -150px;
+  }
+  .abut .max-width .column {
+    margin: 0px;
+  }
+  .abut .max-width .column .text {
+    width: 300px;
+  }
+  .abut .max-width p {
+    width: 300px;
+  }
+  form {
+    margin: 0px;
+  }
+  .contact .contact-contact .column,
+  .contact .contact-contact .column{
+    width: 100%;
+    margin-bottom:30px ;
+  }
+  .contact .contact-contact .column .right{
+   margin-left: -210px;
+   margin-top: 100px;
+  }
+}
+section {
+  padding: 40px 0;
+}
+.abut,
+.services {
+  font-family: "Poppins", sans-serif;
+}
+section .Taite {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+section .Taite::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 3px;
+  background-color: black;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
+section .Taite::after {
+  position: absolute;
+  background-color: white;
+  bottom: -12px;
+  color: crimson;
+  font-size: 20px;
+  left: 50%;
+  padding: 5px;
+  transform: translate(-50%);
+  content: "who i am";
+}
+.abut .Taite::after {
+  content: "who i am";
+}
+.services .Taite::before {
+  background-color: white;
+}
+.services .Taite::after {
+  content: "what i provide";
+  background: black;
+}
+.skills .Taite::after {
+  content: "What i know";
+}
+.services {
+  background: black;
+  color: wheat;
+}
+.services .serv-content .card {
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card i {
+  font-size: 50px;
+  color: crimson;
+}
+.services .serv-content .card:hover i {
+  color: white;
+}
+.services .serv-content .card .box {
+  transform: scale(1.05);
+}
+.services .serv-content .card:hover {
+  background-color: crimson;
+}
+.services .serv-content .card:hover .box {
+  transition: all 0.3s ease;
+}
+.abut .about-content .laft img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.abut .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.abut .about-content .right {
+  width: 55%;
+}
+.abut .about-content .right a {
+  display: inline-block;
+  background-color: crimson;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 1px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.abut .about-content .right a:hover {
+  background: none;
+  color: crimson;
+}
+.abut .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.abut .about-content .right .text span {
+  color: crimson;
+}
+.abut .about-content .right p {
+  text-align: justify;
+}
+.skills .skills-content .column {
+  width: calc(50% - 30px);
+}
+.skills .skills-content .left .text {
+  font-size: 24px;
+  font-size: 600;
+  margin-bottom: 10px;
+}
+.skills .skills-content .right .bars {
+  margin-bottom: 15px;
+}
+.skills .skills-content .right .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: crimson;
+}
+.right {
+  margin-left: 50%;
+  margin-top: -17%;
+}
+.skills-content .right .HTML::before {
+  width: 90%;
+}
+.skills-content .right .CSS::before {
+  width: 70%;
+}
+.skills-content .right .bootstrap::before {
+  width: 80%;
+}
+.skills-content .right .javaScript::before {
+  width: 50%;
+}
+.skills-content .right .jQuery::before {
+  width: 40%;
+}
+.skills .max-width .skills-content .column a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: crimson;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 18px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.skills .max-width .skills-content .column:hover a {
+  background: none;
+  color: tomato;
+}
+.contact .Taite::after {
+  content: "get in touch";
+}
+.contact .contact-contact .column {
+  width: calc(50% - 30px);
+}
+.contact .contact-contact .left p {
+  text-align: justify;
+}
+.contact .contact-contact .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-contact .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-contact .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-contact .row .info {
+  margin-left: 30px;
+}
+.contact .contact-contact .row i {
+  font-size: 25px;
+  color: crimson;
+}
+.contact .contact-contact .info .head {
+  font-weight: 500;
+}
+.contact .contact-contact .row .sub-taite {
+  color: #333;
+}
+.contact .right form .fields {
+  display: flex;
+}
+.contact .right form .fields,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .fields input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .email {
+  margin-left: 10px;
+}
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .textarea textarea {
+  margin-top: 10px;
+  width: 100%;
+}
+.contact .right form .button {
+  height: 47px;
+  width: 170px;
+}
+.contact .right form .button button {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  border: 2px solid crimson;
+  background: crimson;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.contact .right form .button button:hover{
+  background: none;
+  color: crimson;
+}
+footer{
+  background: black;
+  padding: 20px 23px;
+  color: white;
+}
+footer span a{
+  text-decoration: none;
+  color: crimson;
+}
+footer span a:hover{
+text-decoration: underline;
+}
